@@ -1,0 +1,28 @@
+.Wrapper{
+    width: 100%;
+    border: 1px solid var(--grey-color);
+}
+
+.Wrapper h5{
+    color: var(--white-color);
+    font-size: 1rem;
+    border-bottom: solid 1px var(--grey-color);
+    padding: 0.5rem;
+}
+
+.items{
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    color: var(--grey-color);
+}
+
+@media (max-width:800px) {
+    .Wrapper h5{
+        font-size: 0.9rem;
+    }
+    .items{
+        font-size: 0.8rem;
+        }
+}   

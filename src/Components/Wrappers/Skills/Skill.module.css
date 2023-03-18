@@ -1,0 +1,40 @@
+.SkillContentWrapper{
+    display: flex;
+  }
+  .Skillbackground{
+    min-width: 300px;
+  }
+  .Skillbackground img{
+    width: 100%;
+  }
+  .skillsItems{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .skillContainer{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width:1000px) {
+   .Skillbackground{
+    display: none;
+
+   }
+   .SkillContentWrapper{
+    
+    position: relative;
+   }
+  }
+
+  @media (max-width: 540px) {
+    .skillsItems{
+        grid-template-columns: 1fr;
+    }
+    .skillContainer{
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  }

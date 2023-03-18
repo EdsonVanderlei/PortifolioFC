@@ -1,0 +1,110 @@
+.Wrapper{
+        display: flex;
+        margin-top: 8.125rem;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+}
+
+.Informations{
+    justify-items: left;
+}
+
+.title{
+    font-size: 2rem;
+    max-width: 25ch;
+    color: var(--white-color);
+}
+.title span{
+    color: var(--primary-color);
+}
+
+
+.describe{
+    margin-top: 2rem;
+    color: var(--grey-color);
+    font-size: 1rem;
+    max-width: 40ch;
+}
+
+.contact{
+    margin-top: 1.3rem;
+    border: solid 1px var(--primary-color);
+    background-color: transparent;
+    padding: 0.375rem 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: var(--white-color);
+    position: relative;
+}
+
+.contact:hover{
+    color: var(--primary-color);
+    box-shadow: 0px 9px 9px #00000046, 0px 9px 9px #00000046;
+}
+
+.contact::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: 0.6s ease;
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+.contact:hover::after{
+    width: 100%;
+}
+
+.photo_describe{
+    border: 1px solid var(--primary-color);
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact p{
+    position: relative;
+    z-index: 2;
+}
+
+.photo{
+    display: grid;
+}
+
+.square{
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+}
+
+.photo_describe_text{
+    color: var(--grey-color);
+
+}
+
+.photo_describe_text span{
+    color: var(--white-color);
+}
+
+.photo_describe_Wrapper{
+    padding: 0 1.7rem;
+}
+
+@media (max-width:1000px) {
+    .Wrapper{
+        gap: 3rem;
+        margin-top: 0px;
+        flex-direction: column-reverse;
+    }
+
+}
+@media (max-width:1000px){
+    .title{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,69 @@
+.Wrapper{
+    display: flex;
+    margin-top: 6rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.Content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Content_Phrase{
+    border: 1px solid var(--grey-color);
+    padding: 2rem;
+    position: relative;
+}
+
+.Content_Phrase p {
+    font-size: 1.5rem;
+
+    color: var(--white-color);
+
+}
+
+.image1{
+    position: absolute;
+    top: -14.5px;
+    left: 10px;
+}
+.image2{
+    position: absolute;
+    bottom: -14.5px;
+    right: 10px;
+}
+
+.Autor{
+    border: solid 1px var(--grey-color);
+    padding:  1rem;
+}
+
+.Autor p{
+    font-size: 1.5rem;
+        color: var(--white-color);
+    
+ }
+
+ @media (max-width:1000px) {
+    .Autor p{
+        font-size: 1rem;
+    }
+    .Content_Phrase p{
+        font-size: 1rem;
+        
+    }
+ }
+ @media (max-width:600px) {
+    .Content_Phrase{
+        padding: 1rem;
+    }
+    .Autor p{
+        font-size: 0.8rem;
+    }
+    .Content_Phrase p{
+        font-size: 0.8rem;
+        
+    }
+ }

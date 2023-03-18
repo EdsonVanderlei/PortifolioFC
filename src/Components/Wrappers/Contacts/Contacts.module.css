@@ -1,0 +1,51 @@
+.Contacts_Wrapper{
+    color: var(--grey-color);
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+  }
+  
+  
+  .Contacts_Boxer{
+    display: grid;
+    gap: 1rem;
+    border: 1px solid  var(--grey-color);
+    padding: 1rem;
+  }
+  .InboxContacts{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--grey-color);
+  }
+  .Contacts_Boxer_Text{
+    color: var(--grey-color);
+  }
+  .Contacts_Text{
+    width: 50%;
+  }
+  
+  .InboxContacts_Item{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .InboxContacts{
+    display: grid;
+  }
+
+  @media (max-width:826px) {
+    .Contacts_Wrapper{
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+    .Contacts_Text{
+      text-align: justify;
+      width: 100%;
+    }
+  }
+
