@@ -16,7 +16,7 @@ const SkillItem = ({items,children} : {
             )
          }
 
-         )}
+         ).join(' | ')}
         </div>
     </div>
   )
