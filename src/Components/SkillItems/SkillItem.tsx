@@ -9,14 +9,18 @@ const SkillItem = ({items,children} : {
     <div className={css.Wrapper}>
         <h5>{children}</h5>
         <div className={css.items}>
-         {items?.map((item) => {
+         {items?.map((item,index) => {
+            if(index !== items.length -1){
+              return (
+                <p key={item}>{item} | </p> 
+                )
+            }
             return (
-            <p key={item}>{item} </p> 
-
-            )
+              <p key={item}>{item} | </p> 
+              )
          }
 
-         ).join(' | ')}
+         )}
         </div>
     </div>
   )
