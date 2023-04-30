@@ -10,7 +10,7 @@ const Contacts = () => {
 Estou interessado em oportunidades de Desenvolvedor Web. Se você tiver algum dúvida, não hesite em entrar em contato !</p>
     <div data-aos='zoom-in' className={css.Contacts_Boxer}>
       <p className={css.Contacts_Boxer_Text}>Me mande mensagem aqui  👇</p>
-      <p  className={css.InboxContacts}>
+      <div  className={css.InboxContacts}>
         <div   className={css.InboxContacts_Item}>
           <Discord />
           <p>Vandeco#2025</p>
@@ -19,7 +19,7 @@ Estou interessado em oportunidades de Desenvolvedor Web. Se você tiver algum d�
           <Email />
           <p className={css.Email_Inbox}>edsonvanderlei@outlook.com.br</p>
         </div>
-      </p>
+      </div>
 
 
     </div>

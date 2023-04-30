@@ -29,24 +29,27 @@ function App() {
   }, [])
 
 
-  const project = {
-    image: <img src={Image}/>,
-    stacks: ['Typescript','React'],
-    title:'Portifólio',
-    describe: 'Este é um pequeno projeto pessoal'
-  }
-  const project2 = {
-    image: <img src={Image2}/>,
-    stacks: ['React'],
-    title:'Projeto Dogs',
-    describe: 'Este é um projeto pessoal que tentei fazer por fora, sem ver a aula do curso, está incompelto'
-  }
-  const project3 = {
-    image: <img src={Image3}/>,
-    stacks: ['HTML','CSS', 'JavaScript'],
-    title:'The first Page',
-    describe: 'Este é meu primeiro projeto front-end, é importante ter uma linha do tempo, para termos noção das nossas evoluções'
-  }
+  const projects = [
+    {
+      image: <img src={Image}/>,
+      stacks: ['Typescript','React'],
+      title:'Portifólio',
+      describe: 'Este é um pequeno projeto pessoal'
+    },
+    {
+      image: <img src={Image2}/>,
+      stacks: ['React'],
+      title:'Projeto Dogs',
+      describe: 'Esse foi um projeto pessoal que decidi fazer antes das aulas do curso Origamid, para poder entender quais eram meus pontos fracos, e poder melhorá-los, ainda estou desenvolvendo ele'
+    },
+    {
+      image: <img src={Image3}/>,
+      stacks: ['HTML','CSS', 'JavaScript'],
+      title:'The first Page',
+      describe: 'Este é meu primeiro projeto front-end, é importante ter uma linha do tempo, para termos noção das nossas evoluções'
+    }
+  ]
+
   return (
     <div className={css.Wrapper}>
       <div className={css.Wrapper_Container}>
@@ -61,10 +64,7 @@ function App() {
             <div data-aos='fade-down' id='project' className={css.Content_Wrapper}>
               <Title lineWidth={80} expand>projects</Title>
               <div className={css.ProjectContentWrapper}>
-                <ProjectItem  obj={project}  />
-                <ProjectItem  obj={project2}  />
-                <ProjectItem  obj={project3}  />
-
+                 {projects.map((item) => <ProjectItem key={item.title} obj={item}/>)}
               </div>
             </div>
             <div data-aos='fade-down' id='skill' className={css.Content_Wrapper} >

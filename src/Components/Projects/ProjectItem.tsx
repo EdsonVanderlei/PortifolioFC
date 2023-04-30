@@ -18,7 +18,7 @@ const ProjectItem = ({obj} : {
                     {obj.image}
                 </div>
                 <div className={css.stacks}>
-                    {obj.stacks.map((item)=> <p>{item}</p>)}
+                    {obj.stacks.map((item)=> <p key={item}>{item}</p>)}
                 </div>
 
                 <div className={css.informations}>

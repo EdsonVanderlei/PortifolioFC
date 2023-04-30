@@ -16,7 +16,7 @@ const SkillItem = ({items,children} : {
                 )
             }
             return (
-              <p key={item}>{item} | </p> 
+              <p key={item}>{item}</p> 
               )
          }
 
