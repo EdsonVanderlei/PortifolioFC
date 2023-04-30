@@ -5,7 +5,6 @@ const SkillItem = ({items,children} : {
   items: string[],
   children: React.ReactNode
 }) => {
-    console.log(items)
   return (
     <div className={css.Wrapper}>
         <h5>{children}</h5>

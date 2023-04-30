@@ -3,11 +3,11 @@ import skillBackground from '../../../Assets/image/skillBackground.png'
 import SkillItem from '../../SkillItems/SkillItem'
 import css from './Skill.module.css'
 const Skill = () => {
-  const items = ['TypeScript', 'JavaScript', 'C#']
+  const items = ['TypeScript', 'JavaScript', 'C#', 'NodeJS']
   const dataBases = ['MySQL','SQLServer']
-  const others = ['HTML','CSS','CleanCode','Scrum']
+  const others = ['HTML','CSS','CleanCode','Scrum','Prisma','Zustand','Zod']
   const tools = ['Visual Studio Code', 'Visual Studio', 'Figma']
-  const FrameWorks = ['React','ASP .NET']
+  const FrameWorks = ['ReactJS','ASP .NET','Express','NestJS']
 
   return (
     <div className={css.SkillContentWrapper}>
