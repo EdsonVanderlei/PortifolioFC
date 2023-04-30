@@ -1,6 +1,6 @@
 {
   "name": "portifolio",
-  "homepage": "https://EdsonVanderlei.github.io/RepositoryPortifolio",
+  "homepage": "portifolio-fc.vercel.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
