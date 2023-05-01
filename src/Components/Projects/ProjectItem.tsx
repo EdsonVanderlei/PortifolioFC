@@ -6,14 +6,39 @@ const ProjectItem = ({obj} : {
         image:JSX.Element,
         stacks: string[],
         title: string,
-        describe:string
+        describe:string,
+        delay:string
     } | null
 }) => {
+        React.useEffect(() => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((item,index) => {
+                    if(item.isIntersecting){
+                        setTimeout(() => {
+                        item.target.classList.add('animate')
+                            
+                        }, 600 * (index + 1));
+                    }
+                    else{
+                        item.target.classList.remove('animate')
+                    }
+                })
+            })
+            const items = document.querySelectorAll('.SkillItemAnimate')
+            items.forEach((item) => {
+                observer.observe(item)
+            
+            })
+        },[])
+       
+   
+
+
 
     if(!obj) return null
     return (
 
-            <div data-aos="zoom-in" className={css.Wrapper}>
+            <div  className={css.Wrapper + " SkillItemAnimate"}>
                 <div className={css.image}>
                     {obj.image}
                 </div>
