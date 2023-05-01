@@ -1,0 +1,10 @@
+
+.SkillItemAnimate{
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.9s ease;
+}
+.animate{
+    transform: translateY(0);
+    opacity: 1;
+}
